@@ -105,7 +105,7 @@ const ContactMainSection = () => {
                   <div className="contact-3_main-comment-box__form-input-button">
                     <button
                       type="submit"
-                      className="btn-masco rounded-pill w-100"
+                      className="btn-masco btn-primary-l03 btn-shadow rounded-pill w-100"
                     >
                       Send Message
                     </button>

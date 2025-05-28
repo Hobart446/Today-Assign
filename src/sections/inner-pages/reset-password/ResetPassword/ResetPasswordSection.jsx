@@ -6,7 +6,11 @@ const ResetPasswordSection = () => {
           <div className="col-xxl-6 col-xl-7 col-lg-8 col-md-10">
             <div className="account-heading-block">
               <a href="/" className="account-brand d-block">
-                <img src="/image/icons/brand.svg" alt="masco" />
+                <img 
+                  src="/image/today-assign/logo_today_assign.png" 
+                  alt="Today Assign" 
+                  style={{ maxHeight: "80px", width: "auto" }}
+                />
               </a>
               <div className="account-heading">
                 <h2 className="account-heading__title heading-md">
@@ -28,7 +32,7 @@ const ResetPasswordSection = () => {
                 <div className="account_comment-box__form-input-button">
                   <button
                     type="submit"
-                    className="btn-masco rounded-pill w-100"
+                    className="btn-masco btn-primary-l03 btn-shadow rounded-pill w-100"
                   >
                     Send Reset Link
                   </button>

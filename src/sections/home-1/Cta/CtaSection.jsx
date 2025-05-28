@@ -17,7 +17,7 @@ const CtaSection = () => {
               <div className="cta-base__button">
                 <Button
                   href="/contact"
-                  className="btn-masco rounded-pill btn-fill--up"
+                  className="btn-masco btn-primary-l03 btn-shadow rounded-pill"
                 >
                   <span>Let's start the project</span>
                 </Button>

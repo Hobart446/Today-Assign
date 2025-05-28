@@ -99,15 +99,15 @@ const Header = ({
           </div>
 
           <div className="header-cta-btn-wrapper">
-            <a
-              href="#"
+            <Link
+              to="/sign-in"
               className="btn-masco btn-masco--header btn-masco--header-secondary"
             >
               <span>Login</span>
-            </a>
+            </Link>
 
             <Button
-              href="#"
+              href="/sign-up"
               animation={btnAnimation}
               className={signUpButtonClass}
             >

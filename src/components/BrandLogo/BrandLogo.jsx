@@ -5,23 +5,27 @@ function BrandLogoLight({ className }) {
     <>
       <img
         className={`logo-dark${hasClassProps(className)}`}
-        src="/image/icons/logo-whites.svg"
-        alt="brand logo"
+        src="/image/today-assign/logo_today_assign.png"
+        alt="Today Assign"
+        style={{ maxHeight: "60px", width: "auto" }}
       />
     </>
   );
 }
-function BrandLogoDark({ className, logoUrl = "/image/logo.png" }) {
+
+function BrandLogoDark({ className, logoUrl = "/image/today-assign/logo_today_assign.png" }) {
   return (
     <>
       <img
-        className={` logo-light${hasClassProps(className)}`}
+        className={`logo-light${hasClassProps(className)}`}
         src={logoUrl}
-        alt="brand logo"
+        alt="Today Assign"
+        style={{ maxHeight: "60px", width: "auto" }}
       />
     </>
   );
 }
+
 export default function BrandLogo({ className, type, logoUrl }) {
   let logoSettings = {
     className,

@@ -21,7 +21,7 @@ const FactSection = () => {
                 <div className="content-button-block">
                   <a
                     href="#"
-                    className="btn-masco btn-primary rounded-pill btn-fill--up"
+                    className="btn-masco btn-primary-l03 btn-shadow rounded-pill"
                   >
                     <span>Get in touch</span>
                   </a>

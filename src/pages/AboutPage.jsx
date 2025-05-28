@@ -15,14 +15,15 @@ import Layout from "@components/Layout/PageWrapper/PageWrapper";
 let settingProps = {
   footer: {
     className: " footer-padding-default footer--dark-v1",
-    logo: "logo-white.svg",
+    logo: "today-assign/logo_today_assign.png",
+    socialClass: "list-social--hvr-primary-l3",
   },
 };
 const AboutPage = () => {
   return (
     <>
       <Layout>
-        <Header signUpButtonClass="btn-masco btn-masco--header rounded-pill btn-fill--up" />
+        <Header signUpButtonClass="btn-masco btn-primary-l03 btn-shadow rounded-pill" />
         <Banner title="About Us" text="About" />
         <BannerSection />
         <BrandSection />

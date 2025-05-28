@@ -20,7 +20,7 @@ const PortfolioSection = () => {
       <div className="about_portfolio-section section-padding-120">
         <div className="container">
           <SectionHeading {...settingProps.sectionHeading}>
-            <Button className="rounded-pill btn-fill--up">
+            <Button className="btn-masco btn-primary-l03 btn-shadow rounded-pill">
               See more works
             </Button>
           </SectionHeading>

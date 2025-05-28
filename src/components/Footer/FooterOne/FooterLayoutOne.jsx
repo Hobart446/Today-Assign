@@ -9,7 +9,11 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
             <div className="footer__content-block">
               <div className="footer__content-text">
                 <div className="footer-brand">
-                  <img src={`/image/${logo}`} alt="image alt" />
+                  <img 
+                    src={`/image/${logo}`} 
+                    alt="Today Assign" 
+                    style={{ maxHeight: "80px", width: "auto" }}
+                  />
                 </div>
                 <p>
                   We are strategic & creative digital agency who are focused on
@@ -19,7 +23,7 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
               </div>
 
               <a href="#" className="footer-link">
-                mascoexample@gmail.com
+                todayassign@gmail.com
               </a>
               <br />
               <ul
@@ -117,7 +121,7 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
       <div className="copyright-block">
         <div className="container">
           <div className="copyright-inner text-center  copyright-border">
-            <p>© Copyright 2023, All Rights Reserved by Mthemeus</p>
+            <p>© Copyright 2023, All Rights Reserved by Today Assign</p>
           </div>
         </div>
       </div>

@@ -87,12 +87,12 @@
         }
     }
     &.active{
-        box-shadow: 10px 10px rgba($body-color-rgb);
+        box-shadow: 10px 10px rgba($l3-primary);
         border-radius: 10px;
     }
     &:hover {
 
-        box-shadow: 10px 10px rgba($body-color-rgb);
+        box-shadow: 10px 10px rgba($l3-primary);
         border-radius: 10px;
 
     }
