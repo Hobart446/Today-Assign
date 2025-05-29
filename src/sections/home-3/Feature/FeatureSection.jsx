@@ -4,8 +4,8 @@ import SectionHeading from "@components/Layout/SectionHeading";
 
 let settingProps = {
   sectionHeading: {
-    title: "Ultimate method & amazing features to change your life",
-    column: "col-xxl-6 col-xl-7 col-lg-8 col-md-10",
+    title: "利用高效的任务管理功能简化工作流程",
+    column: "col-xxl-8 col-xl-9 col-lg-10 col-md-12",
     classes: {
       row: "justify-content-center",
       className: "text-center",

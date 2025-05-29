@@ -10,21 +10,25 @@ const PriceCardOne = ({
   isActive,
   btnClass,
 }) => {
+  const currentPrice = price ? price : monthly ? monthlyPrice : yearlyPrice;
+  const showDollarSign = currentPrice !== "請聯繫我們";
+  const showPerMonth = currentPrice !== "請聯繫我們";
+  
   return (
     <>
       <div className={`pricing-card ${isActive === "active" ? "active" : ""}`}>
         <div className="pricing-card__head">
           <h3 className="pricing-card__plan">{name}</h3>
           <h3 className="pricing-card__price-block">
-            $
+            {showDollarSign && "$"}
             <span
               className="pricing-card__price dynamic-value"
               data-yearly="00"
               data-monthly="00"
             >
-              {price ? price : monthly ? monthlyPrice : yearlyPrice}
+              {currentPrice}
             </span>
-            /month
+            {showPerMonth && "/month"}
           </h3>
           <p>No credit card required</p>
         </div>

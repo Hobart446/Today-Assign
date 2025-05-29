@@ -1,51 +1,39 @@
 [
   {
-    "name": "Silver Plan",
+    "name": "個人版 For Personal",
 
-    "monthlyPrice": "00",
-    "yearlyPrice": "00",
+    "monthlyPrice": "Free",
+    "yearlyPrice": "Free",
     "isActive": "",
     "btnClass": "btn-masco btn-primary-l03 btn-shadow rounded-pill w-100",
     "listItems": [
-      { "text": "Unlimited chats & websites" },
-      { "text": "60-day conversations history" },
-      { "text": "Basic widget customization" },
-      { "text": "Web, desktop & mobile apps" },
-      { "text": "Engage visitors via visitor list", "class": "disabled" },
-      { "text": "Engage with automatic messages", "class": "disabled" }
+      { "text": "1名用戶使用" },
+      { "text": "功能使用無限制" }
     ]
   },
   {
-    "name": "Popular Plan",
+    "name": "商業版 For Business",
 
-    "monthlyPrice": "199",
-    "yearlyPrice": "250",
+    "monthlyPrice": "98",
+    "yearlyPrice": "198",
     "isActive": "active",
 
     "btnClass": "btn-masco btn-primary-l03 btn-shadow rounded-pill w-100",
     "listItems": [
-      { "text": "Live chat + email + FB Messenger " },
-      { "text": "3-year conversations history " },
-      { "text": "Advanced widget customization" },
-      { "text": "24/7 system monitoring facility " },
-      { "text": "Engage visitors via visitor list " },
-      { "text": "Engage with automatic messages " }
+      { "text": "支援30名用戶同時使用" },
+      { "text": "功能使用無限制 " }
     ]
   },
   {
-    "name": "Standard Plan",
+    "name": "專門訂制 Tailor-made",
 
-    "monthlyPrice": "49",
-    "yearlyPrice": "99",
+    "monthlyPrice": "請聯繫我們",
+    "yearlyPrice": "請聯繫我們",
     "isActive": "",
     "btnClass": "btn-masco btn-primary-l03 btn-shadow rounded-pill w-100",
     "listItems": [
-      { "text": "Live chat + email + FB Messenger" },
-      { "text": "1- year conversations history" },
-      { "text": "Advanced widget customization" },
-      { "text": "24/7 system monitoring facility" },
-      { "text": "Engage visitors via visitor list", "class": "disabled" },
-      { "text": "Engage with automatic messages", "class": "disabled" }
+      { "text": "31名用戶或以上同時使用" },
+      { "text": "功能使用無限制" }
     ]
   }
 ]

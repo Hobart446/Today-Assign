@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const settingProps = {
   sectionHeading: {
-    title: "Choice the right pricing plan that suits your need",
+    title: "选择适合您需要的定价方案",
     column: "col-xxl-6 col-lg-7 col-md-8",
     classes: {
       title: "heading-md text-black",

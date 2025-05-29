@@ -1,18 +1,18 @@
 [
   {
-    "title": "About Us",
+    "title": "关于我们",
     "link": "/about"
   },
   {
-    "title": "Pricing",
+    "title": "价目",
     "link": "/pricing-2"
   },
   {
-    "title": "Reset Password",
+    "title": "重置密码",
     "link": "/reset-password"
   },
   {
-    "title": "Contact",
+    "title": "联系我们",
     "link": "/contact-3"
   }
 ]

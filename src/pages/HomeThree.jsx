@@ -1,7 +1,7 @@
 // import CtaSection from "@sections/home-3/Cta";
 import HeroSection from "@sections/home-3/Hero";
 // import VideoSection from "@sections/home-3/Video";
-// import ContentSectionOne from "@sections/home-3/ContentOne";
+import ContentSectionOne from "@sections/home-3/ContentOne";
 // import ContentSectionTwo from "@sections/home-3/ContentTwo";
 // import Ticker from "@sections/home-3/Ticker";
 import TestimonialSection from "@sections/home-3/Testimonial";
@@ -23,7 +23,7 @@ const HomepageThree = () => {
         />
         <HeroSection />
         <FeatureSection />
-        {/* <ContentSectionOne /> */}
+        <ContentSectionOne />
         {/* <ContentSectionTwo /> */}
         {/* <Ticker /> */}
         {/* <VideoSection /> */}

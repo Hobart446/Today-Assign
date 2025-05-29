@@ -44,13 +44,10 @@ const HeroSection = () => {
             <div className="home-3_hero-content">
               <div className="home-3_hero-content-text">
                 <h1 className="hero-content__title heading-xl text-black">
-                  Fitness app for your good health
+                Master Your Time with Assign Today
                 </h1>
                 <p>
-                  Snaga is a health & fitness tracker app that helps you set out
-                  realistic goals that you can accomplish without many hurdles.
-                  Sometimes, we keep bigger goals but end up and workout
-                  sessions and exercises to help you keep fit.
+                Assign Today 是一款创新的时间管理应用程序，灵感来自 Elon Musk 的 “Time Boxing” 方法。开始高效组织你的任务，掌控你的每一天。
                 </p>
               </div>
               <div className="home-3_hero-content-stat-wrapper">

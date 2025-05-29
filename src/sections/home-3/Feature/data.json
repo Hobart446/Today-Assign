@@ -1,17 +1,17 @@
 [
     {
-      "icon": "/image/icons/h03-feature-1.svg",
-      "title": "Monitor your diet easily",
-      "text": "Track the times you eat, the foods you eat, portion sizes, and notes."
+      "icon": "/image/icons/h03-feature-4.svg",
+      "title": "利用创新的时间拳法最大限度地提高工作效率",
+      "text": "将任务分解成易于管理的时间段，从而保持有序和专注。"
     },
     {
-      "icon": "/image/icons/h03-feature-2.svg",
-      "title": "Give health & fitness tips",
-      "text": "Exercise is very important for us to be fit and healthy& every tips."
+      "icon": "/image/icons/h03-feature-5.svg",
+      "title": "通过实时进度跟踪监控您的成就",
+      "text": "在完成任务的过程中，想象自己的进步，保持动力。"
     },
     {
-      "icon": "/image/icons/h03-feature-3.svg",
-      "title": "All-in-one health tool",
-      "text": "It can help you set fitness goals, it with wearable fitness technology."
+      "icon": "/image/icons/h03-feature-6.svg",
+      "title": "利用定制功能优化时间管理",
+      "text": "定制应用程序，以适应您独特的工作流程和个人偏好。"
     }
   ]

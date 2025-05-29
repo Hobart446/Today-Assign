@@ -5,7 +5,7 @@ import Button from "@components/Buttons";
 
 const settingProps = {
   sectionHeading: {
-    title: "People all over the world use snaga for their fitness",
+    title: "全球用户都在使用 Time Boxing 提升效率",
     buttonText: "View All Reviews",
     classes: {
       row: "text-center text-lg-initial justify-content-center justify-content-lg-between",

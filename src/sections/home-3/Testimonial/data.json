@@ -1,44 +1,44 @@
 [
   {
-    "title": "Great value home exercise 💪🏼",
-    "text": "I was recommended masco from a dear friend and WOW!!! Gives energy, strength & mostly your motivation and you helped me grow beyond my expectations.",
+    "title": "非常棒的时间管理工具 🧠",
+    "text": "朋友推荐了这个 Time Boxing 应用，我试用后惊艳到了！让我的每天任务更有条理，效率提升超快！",
     "authorImage": "/image/home-3/testimonial-authour-1.png",
-    "authorName": "Karen Lynn",
-    "authorPosition": "Founder @ Company"
+    "authorName": "林凯文",
+    "authorPosition": "公司创办人"
   },
   {
-    "title": "Such a wonderful fitness app ❤",
-    "text": "After a hiatus from the gym I needed some encouragement to help me get my confidence back😍",
+    "title": "真正帮助我专注的系统",
+    "text": "以前总是拖延，但 Time Boxing 教我如何将任务分块安排，真的改善了我的工作习惯，产出翻倍。",
     "authorImage": "/image/home-3/testimonial-authour-2.png",
-    "authorName": "Dianne Russell",
-    "authorPosition": "Developer"
+    "authorName": "麦克·金尼",
+    "authorPosition": "大学生"
   },
   {
-    "title": "Love the home fitness tips",
-    "text": "Such a wonderful fitness plan! Someone who trains regularly but does not have any access to equipment, this plan has been a lifesaver. You don’t need anything but still get a great workout. The recipes are great and I love the guidance about when to eat what.",
+    "title": "10/10 会推荐✌️",
+    "text": "操作简单，功能实用！最喜欢的是可以设定时间段自动提醒，让我更容易保持专注。",
     "authorImage": "/image/home-3/testimonial-authour-3.png",
-    "authorName": "Marvin McKinney",
-    "authorPosition": "College Student"
-  },
-  {
-    "title": "I can honestly say that I’ve enjoyed",
-    "text": "oth the workouts and the delicious receipts are easy to follow and to finish.It’s great to be part of a community.These times when so much has changed❤",
-    "authorImage": "/image/home-3/testimonial-authour-4.png",
-    "authorName": "Ronald Richards",
-    "authorPosition": "Businessman"
-  },
-  {
-    "title": "10/10 would recommend👌🏼",
-    "text": "The workouts are fun to do but still make you sweat! I’m so grateful for the two of you for starting this amazing app️",
-    "authorImage": "/image/home-3/testimonial-authour-5.png",
     "authorName": "Kristin Watson",
-    "authorPosition": "Social Influencer"
+    "authorPosition": "社群影响者"
   },
   {
-    "title": "Just completed week 3 and love the app",
-    "text": "As someone who has not exercised for a few years, it is great to be getting back into it with such accessible exercises and daily tips. Would recommend to anyone whatever fitness level,  The workouts are really fun and my family are loving it too! Wonderful job guys 😍",
+    "title": "非常实用的时间管理工具 ❤",
+    "text": "从长时间低效中走出来，这个工具帮助我找回节奏。任务分段后，一切都变得清晰易行。",
+    "authorImage": "/image/home-3/testimonial-authour-4.png",
+    "authorName": "戴安娜·罗素",
+    "authorPosition": "开发人员"
+  },
+  {
+    "title": "我真的喜欢这种方式",
+    "text": "任务不再堆积如山，每天都能按节奏完成，太有成就感了！推荐给所有想改变效率的人！",
+    "authorImage": "/image/home-3/testimonial-authour-5.png",
+    "authorName": "罗纳德·理查兹",
+    "authorPosition": "企业家"
+  },
+  {
+    "title": "使用三周后，工作节奏变轻松了 ❤",
+    "text": "作为一个总是焦头烂额的人，我找到了Time Boxing之后，终于每天都不再混乱。家人也开始试用了！",
     "authorImage": "/image/home-3/testimonial-authour-6.png",
-    "authorName": "Guy Hawkins",
-    "authorPosition": "Web Developer"
+    "authorName": "盖伊·霍金斯",
+    "authorPosition": "网页开发者"
   }
 ]

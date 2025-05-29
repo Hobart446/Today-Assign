@@ -17,7 +17,7 @@ const PricingPageTwo = () => {
       {" "}
       <Layout>
         <Header signUpButtonClass="btn-masco btn-primary-l03 btn-shadow rounded-pill" />
-        <Banner title="Pricing" text="Pricing" />
+        <Banner title="价目" text="价目" />
         <PricingSection />
         <CtaSection />
         <FooterLayoutOne {...settingProps.footer} />{" "}
