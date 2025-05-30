@@ -1,70 +1,90 @@
-const SignInSection = () => {
+const SignInSection = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
+  
+  const handleOverlayClick = (e) => {
+    if (e.target.className === 'login-modal-overlay') {
+      onClose();
+    }
+  };
+  
   return (
-    <>
-      <div className="account-section bg-light-2 section-padding-120">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xxl-6 col-xl-7 col-lg-8 col-md-10">
-              <div className="account-heading-block">
-                <a href="/" className="account-brand d-block">
-                  <img 
-                    src="/image/today-assign/logo_today_assign.png" 
-                    alt="Today Assign" 
-                    style={{ maxHeight: "120px", width: "auto" }}
-                  />
-                </a>
-                <div className="account-heading">
-                  <h2 className="account-heading__title heading-md">
-                    Welcome back
-                  </h2>
-                  <p>Enter your account details below to sign in</p>
-                </div>
-              </div>
-              <form className="account_comment-box">
-                <div className="account_comment-box__form-inner">
-                  <div className="account_comment-box__form-input">
-                    <h2 className="account-title">Email address</h2>
-                    <input
-                      className="form-control bg-white"
-                      type="text"
-                      placeholder="Enter your email"
+    <div className="login-modal-overlay" onClick={handleOverlayClick}>
+      <div className="login-modal">
+        <div className="login-card">
+          <div className="modal-close-btn" onClick={onClose}>
+            <span>&times;</span>
+          </div>
+          
+          <div className="tabs-wrapper">
+            <ul className="nav-tabs">
+              <li className="active">
+                <a href="#login-tab">Login</a>
+              </li>
+              <li>
+                <a href="#register-personal-tab">Register (Personal)</a>
+              </li>
+              <li>
+                <a href="#register-corporation-tab">Register (Corporation)</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div className="tab-content">
+            <div className="tab-pane active" id="login-tab">
+              <div className="login-form-wrapper">
+                <h2 className="text-center">Welcome Back!</h2>
+                
+                <form>
+                  <div className="mb-4">
+                    <label htmlFor="corpCode" className="form-label">Corp Code</label>
+                    <input 
+                      type="text" 
+                      className="form-control" 
+                      id="corpCode" 
+                      placeholder="Enter your corp code"
                     />
                   </div>
-                  <div className="account_comment-box__form-input">
-                    <h2 className="account-title">Password*</h2>
-                    <input
-                      className="form-control bg-white"
-                      type="text"
-                      placeholder="typepassword"
+                  
+                  <div className="mb-4">
+                    <label htmlFor="email" className="form-label">Email</label>
+                    <input 
+                      type="email" 
+                      className="form-control" 
+                      id="email" 
+                      placeholder="Enter your email address"
                     />
                   </div>
-                  <div className="account-condition-block">
-                    <span className="account-condition">
-                      <input type="checkbox" id="checkbox" />
-                      Remember me{" "}
-                    </span>
-                    <a href="#">Forget password?</a>
-                  </div>
-                  <div className="account_comment-box__form-input-button">
-                    <button
-                      type="submit"
-                      className="btn-masco btn-primary-l03 btn-shadow rounded-pill w-100"
-                    >
-                      Login Now
-                    </button>
-                    <div className="button-bottom-text">
-                      <span>
-                        Don't have an account? <a href="#">Create an account</a>
-                      </span>
+                  
+                  <div className="mb-4">
+                    <label htmlFor="password" className="form-label">Password</label>
+                    <input 
+                      type="password" 
+                      className="form-control" 
+                      id="password" 
+                      placeholder="Enter your password"
+                    />
+                    <div className="text-end mt-1">
+                      <a href="#" className="forgot-link">Forgot password?</a>
                     </div>
                   </div>
-                </div>
-              </form>
+                  
+                  <div className="mb-4">
+                    <div className="form-check">
+                      <input type="checkbox" className="form-check-input" id="rememberMe" />
+                      <label className="form-check-label" htmlFor="rememberMe">Remember me</label>
+                    </div>
+                  </div>
+                  
+                  <div className="d-grid">
+                    <button type="submit" className="btn btn-success">Submit</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

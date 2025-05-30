@@ -4,9 +4,9 @@ import data from "./data";
 import { Link } from "react-router-dom";
 import BrandLogo from "../BrandLogo/BrandLogo";
 import Button from "../Buttons/Button";
-import TabsLoginForm from "../../sections/inner-pages/SignIn/SignIn/TabsLoginForm";
+import SignInSection from "../../sections/inner-pages/SignIn/SignIn/SignInSection";
 
-const Header = ({
+const ChineseHeader = ({
   signUpButtonClass,
   btnAnimation = true,
   logoUrl,
@@ -114,7 +114,7 @@ const Header = ({
                 onClick={openLoginModal}
                 className="btn-masco btn-masco--header btn-masco--header-secondary"
               >
-                <span>登录</span>
+                <span>Login</span>
               </button>
 
               <Button
@@ -122,14 +122,14 @@ const Header = ({
                 animation={btnAnimation}
                 className={signUpButtonClass}
               >
-                免费注册
+                Sign up free
               </Button>
             </div>
           </nav>
         </div>
       </header>
       
-      <TabsLoginForm 
+      <SignInSection 
         isOpen={isLoginModalOpen} 
         onClose={closeLoginModal} 
       />
@@ -137,4 +137,4 @@ const Header = ({
   );
 };
 
-export default Header;
+export default ChineseHeader; 

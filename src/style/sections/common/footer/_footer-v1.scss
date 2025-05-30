@@ -2,27 +2,109 @@
 /* ==========  Footer Style v1  ============= */
 .footer{
   @include body-18(400);
-  &__content-block{
-    max-width: 416px;
-    .footer-brand{
-      margin-bottom: 33px;
-    }
-  }
-  &__content-text{
-    margin-bottom: 24px;
-  }
-  a{
-    &.footer-link{
-      text-decoration: underline;
-      margin-bottom: 24px;
+  padding: 40px 0 20px;
+  background-color: #ffffff;
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .footer-logo {
+      margin-bottom: 30px;
+      img {
+        height: 40px;
+        width: auto;
+      }
     }
     
+    .footer-nav {
+      margin-bottom: 30px;
+      
+      .footer-menu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+          margin: 0 15px;
+          
+          a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            
+            &:hover {
+              color: #45B54A;
+            }
+          }
+        }
+      }
+    }
+    
+    .footer-divider {
+      width: 100%;
+      border-top: 1px solid #dee2e6;
+      margin: 0 0 20px;
+    }
+    
+    .footer-bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .copyright {
+        color: #6c757d;
+        font-size: 14px;
+      }
+      
+      .footer-policies {
+        .policy-links {
+          display: flex;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          
+          li {
+            margin: 0 10px;
+            
+            a {
+              color: #6c757d;
+              text-decoration: none;
+              font-size: 14px;
+              
+              &:hover {
+                color: #45B54A;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  .row--list-block{
-    justify-content: space-between;
-    --bs-gutter-y:40px
-  }
-  .row--footer-main{
-    --bs-gutter-y:40px
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      .footer-nav {
+        .footer-menu {
+          flex-direction: column;
+          align-items: center;
+          
+          li {
+            margin: 5px 0;
+          }
+        }
+      }
+      
+      .footer-bottom {
+        flex-direction: column;
+        
+        .copyright {
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 }

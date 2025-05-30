@@ -9,7 +9,7 @@ const CtaSection = () => {
             <div className="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-10">
               <div className="cta-base__text-block">
                 <h2 className="heading-md text-white">
-                  Ready to grow your business digitally?
+                  别再浪费时间了<br />马上行动吧！
                 </h2>
               </div>
             </div>
@@ -19,7 +19,7 @@ const CtaSection = () => {
                   href="/contact"
                   className="btn-masco btn-primary-l03 btn-shadow rounded-pill"
                 >
-                  <span>Let's start the project</span>
+                  <span>免费注册</span>
                 </Button>
                 <div className="cta-base__button-shape">
                   <img src="/image/home-1/cta-shape.svg" alt="image " />

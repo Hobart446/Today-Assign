@@ -1,60 +1,49 @@
 const SignIn = () => {
   return (
-    <div className="account-section bg-light-2 section-padding-120">
+    <div className="login-section">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-xxl-6 col-xl-7 col-lg-8 col-md-10">
-            <div className="account-heading-block">
-              <a href="index.html" className="account-brand d-block">
-                <img src="/image/icons/brand.svg" alt="masco" />
-              </a>
-              <div className="account-heading">
-                <h2 className="account-heading__title heading-md">
-                  Welcome back
-                </h2>
-                <p>Enter your account details below to sign in</p>
+          <div className="col-md-6">
+            <div className="login-wrapper">
+              <div className="text-center mb-4">
+                <img src="/image/icons/today-assign-logo.svg" alt="Today Assign" className="logo" />
               </div>
-            </div>
-            <form className="account_comment-box">
-              <div className="account_comment-box__form-inner">
-                <div className="account_comment-box__form-input">
-                  <h2 className="account-title">Email address</h2>
-                  <input
-                    className="form-control bg-white"
-                    type="text"
+              
+              <h1 className="text-center mb-2">Welcome back</h1>
+              <p className="text-center mb-5">Enter your account details below to sign in</p>
+              
+              <div className="login-form">
+                <div className="mb-4">
+                  <label htmlFor="email" className="form-label">Email address</label>
+                  <input 
+                    type="email" 
+                    className="form-control" 
+                    id="email" 
                     placeholder="Enter your email"
                   />
                 </div>
-                <div className="account_comment-box__form-input">
-                  <h2 className="account-title">Password*</h2>
-                  <input
-                    className="form-control bg-white"
-                    type="text"
+                
+                <div className="mb-4">
+                  <label htmlFor="password" className="form-label">Password*</label>
+                  <input 
+                    type="password" 
+                    className="form-control" 
+                    id="password" 
                     placeholder="typepassword"
                   />
                 </div>
-                <div className="account-condition-block">
-                  <span className="account-condition">
-                    <input type="checkbox" id="checkbox" />
-                    Remember me{" "}
-                  </span>
-                  <a href="#">Forget password?</a>
-                </div>
-                <div className="account_comment-box__form-input-button">
-                  <button
-                    type="submit"
-                    className="btn-masco rounded-pill w-100"
-                  >
-                    Login Now
-                  </button>
-                  <div className="button-bottom-text">
-                    <span>
-                      Don’t have an account? <a href="#">Create an account</a>
-                    </span>
+                
+                <div className="d-flex justify-content-between mb-4">
+                  <div className="form-check">
+                    <input type="checkbox" className="form-check-input" id="rememberMe" />
+                    <label className="form-check-label" htmlFor="rememberMe">Remember me</label>
                   </div>
+                  <a href="#" className="forgot-link">Forget password?</a>
                 </div>
+                
+                <button type="submit" className="btn btn-login w-100">Login Now</button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
