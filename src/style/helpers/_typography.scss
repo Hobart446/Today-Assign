@@ -92,6 +92,7 @@
 .heading-md {
   @include heading-46;
   margin-bottom: 20px;
+  font-size: 43px!important;
   // color: #0A102F;
   &--dm-sans {
     font-weight: 700;
