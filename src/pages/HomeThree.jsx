@@ -4,6 +4,7 @@ import HeroSection from "@sections/home-3/Hero";
 import ContentSectionOne from "@sections/home-3/ContentOne";
 // import ContentSectionTwo from "@sections/home-3/ContentTwo";
 // import Ticker from "@sections/home-3/Ticker";
+import TickerSection from "@sections/home-3/Ticker/TickerSection";
 import TestimonialSection from "@sections/home-3/Testimonial";
 import FeatureSection from "@sections/home-3/Feature";
 import FooterLayoutOne from "@components/Footer/FooterOne";
@@ -24,11 +25,10 @@ const HomepageThree = () => {
         <HeroSection />
         <FeatureSection />
         <ContentSectionOne />
+        <TickerSection />
         {/* <ContentSectionTwo /> */}
-        {/* <Ticker /> */}
         {/* <VideoSection /> */}
         <TestimonialSection />
-        {/* <CtaSection /> */}
         <FooterLayoutOne
           socialClass="list-social--hvr-primary-l3"
           className="padding-top-100 footer--light footer-l03"

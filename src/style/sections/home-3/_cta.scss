@@ -130,3 +130,50 @@
     }
   }
 }
+
+.home-3 {
+  &_cta {
+    &-section {
+      position: relative;
+    }
+
+    &-wrapper {
+      padding: 60px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      
+      @media (max-width: 991px) {
+        padding: 40px;
+      }
+      
+      @media (max-width: 767px) {
+        padding: 30px;
+        text-align: center;
+      }
+    }
+
+    &-text-block {
+      h2 {
+        margin-bottom: 0;
+        letter-spacing: -1px;
+        
+        @media (max-width: 767px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &-button {
+      text-align: right;
+      
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+      
+      .btn-masco {
+        min-width: 200px;
+      }
+    }
+  }
+}

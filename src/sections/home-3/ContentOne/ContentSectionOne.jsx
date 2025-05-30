@@ -38,7 +38,7 @@ const ContentSectionOne = () => {
           <div className="col-xl-6 col-lg-6 col-md-10">
             <div className="home-3_content-image-block">
               <img
-                src="/image/home-3/productivity_item.jpg"
+                src="/image/home-3/productivity_item_1.jpg"
                 alt="productivity image"
                 className="w-100"
               />
