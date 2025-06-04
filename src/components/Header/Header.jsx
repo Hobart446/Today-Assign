@@ -16,8 +16,15 @@ const Header = ({
   const [scrolling, setScrolling] = useState("");
   const [reveal, setReveal] = useState("");
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("login");
 
   const openLoginModal = () => {
+    setActiveTab("login");
+    setIsLoginModalOpen(true);
+  };
+
+  const openRegisterModal = () => {
+    setActiveTab("register-personal");
     setIsLoginModalOpen(true);
   };
 
@@ -117,13 +124,13 @@ const Header = ({
                 <span>登录</span>
               </button>
 
-              <Button
-                href="/sign-up"
-                animation={btnAnimation}
-                className={signUpButtonClass}
+              <button
+                onClick={openRegisterModal}
+                className={`btn-masco ${signUpButtonClass}`}
+                style={{ cursor: 'pointer' }}
               >
                 免费注册
-              </Button>
+              </button>
             </div>
           </nav>
         </div>
@@ -131,7 +138,8 @@ const Header = ({
       
       <TabsLoginForm 
         isOpen={isLoginModalOpen} 
-        onClose={closeLoginModal} 
+        onClose={closeLoginModal}
+        initialTab={activeTab}
       />
     </>
   );

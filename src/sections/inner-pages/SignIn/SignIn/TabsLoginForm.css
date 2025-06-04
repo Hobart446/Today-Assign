@@ -1,0 +1,396 @@
+/* TabsLoginForm.css */
+
+/* Modal styling */
+.login-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-modal {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.login-card {
+  position: relative;
+  padding: 0;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #666;
+  z-index: 10;
+}
+
+/* Tabs styling */
+.tabs-container {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #666;
+  font-weight: 500;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+  color: #00C853;
+  border-bottom-color: #00C853;
+}
+
+.tab.active.text-success {
+  border-bottom: 2px solid #00C853;
+}
+
+.tab:not(.active) {
+  border-bottom-color: transparent;
+}
+
+.tab:hover:not(.active) {
+  background-color: #f9f9f9;
+}
+
+/* Content styling */
+.tab-content {
+  padding: 0;
+}
+
+.login-form-wrapper {
+  padding: 20px 30px 30px;
+}
+
+.login-form-wrapper h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Progress Steps styling */
+.progress-steps {
+  margin: 25px 0 35px;
+}
+
+.step-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.step-label {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #666;
+}
+
+.step-label.text-success {
+  color: #00C853 !important;
+}
+
+.progress-bar-container {
+  position: relative;
+  height: 2px;
+  margin: 10px 0 30px;
+}
+
+.progress-track {
+  height: 2px;
+  background-color: #e9ecef;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Progress circles */
+.progress-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #e9ecef;
+  z-index: 1;
+}
+
+.progress-circle.active {
+  border: 2px solid #00C853;
+  background-color: white;
+}
+
+.progress-circle.completed {
+  border: none;
+  background-color: #00C853;
+}
+
+/* Position the circles at specific points */
+.progress-circle:nth-child(3) {
+  left: 0%;
+}
+
+.progress-circle:nth-child(4) {
+  left: 50%;
+}
+
+.progress-circle:nth-child(5) {
+  left: 100%;
+}
+
+/* Progress line */
+.progress-line {
+  height: 2px;
+  background-color: #00C853;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 45px;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-control::placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Row styling for inputs */
+.row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+/* Password field styling */
+.password-field {
+  position: relative;
+}
+
+.password-field .form-control {
+  padding-right: 40px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+}
+
+.password-toggle:focus {
+  outline: none;
+}
+
+.password-toggle svg {
+  display: block;
+}
+
+/* Button styling */
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 10px;
+  padding: 0;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-block {
+  flex: 1;
+  text-align: center;
+  max-width: 120px;
+}
+
+.btn-success {
+  background-color: #00C853;
+  border-color: #00C853;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #00b34a;
+  border-color: #00b34a;
+}
+
+/* Success text */
+.text-success {
+  color: #00C853 !important;
+}
+
+.text-success.small {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Invalid feedback */
+.invalid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+}
+
+/* Registration Success */
+.registration-success {
+  padding: 10px 30px 30px;
+  text-align: center;
+}
+
+.success-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 20px;
+}
+
+.green-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tutorial-link {
+  margin: 20px 0;
+}
+
+.tutorial-box {
+  display: block;
+  padding: 15px;
+  background-color: #f0f9ff;
+  border: 1px solid #cce5ff;
+  border-radius: 4px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.video-dimensions {
+  color: #6c757d;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Button styling */
+.btn-outline-secondary {
+  color: #6c757d;
+  border-color: #ced4da;
+  background-color: white;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f8f9fa;
+}
+
+/* Eye icon for password fields */
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.input-group .form-control {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-modal {
+    max-width: 90%;
+    margin: 0 15px;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+} 

@@ -4,7 +4,7 @@ import data from "./data";
 import { Link } from "react-router-dom";
 import BrandLogo from "../BrandLogo/BrandLogo";
 import Button from "../Buttons/Button";
-import SignInSection from "../../sections/inner-pages/SignIn/SignIn/SignInSection";
+import TabsLoginForm from "../../sections/inner-pages/SignIn/SignIn/TabsLoginForm";
 
 const ChineseHeader = ({
   signUpButtonClass,
@@ -16,8 +16,15 @@ const ChineseHeader = ({
   const [scrolling, setScrolling] = useState("");
   const [reveal, setReveal] = useState("");
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("login");
 
   const openLoginModal = () => {
+    setActiveTab("login");
+    setIsLoginModalOpen(true);
+  };
+
+  const openRegisterModal = () => {
+    setActiveTab("register-personal");
     setIsLoginModalOpen(true);
   };
 
@@ -114,24 +121,25 @@ const ChineseHeader = ({
                 onClick={openLoginModal}
                 className="btn-masco btn-masco--header btn-masco--header-secondary"
               >
-                <span>Login</span>
+                <span>登录</span>
               </button>
 
-              <Button
-                href="/sign-up"
-                animation={btnAnimation}
-                className={signUpButtonClass}
+              <button
+                onClick={openRegisterModal}
+                className={`btn-masco ${signUpButtonClass}`}
+                style={{ cursor: 'pointer' }}
               >
-                Sign up free
-              </Button>
+                免费注册
+              </button>
             </div>
           </nav>
         </div>
       </header>
       
-      <SignInSection 
+      <TabsLoginForm 
         isOpen={isLoginModalOpen} 
-        onClose={closeLoginModal} 
+        onClose={closeLoginModal}
+        initialTab={activeTab}
       />
     </>
   );
